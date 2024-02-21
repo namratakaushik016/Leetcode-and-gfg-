@@ -6,8 +6,13 @@ public:
         int rightproduct=1;
         int ans=nums[0];
         for(int i=0;i<n;i++){
-            leftproduct=leftproduct==0?1: leftproduct;
-            rightproduct=rightproduct==0?1: rightproduct;
+            if (leftproduct == 0) {
+    leftproduct = 1;
+}
+
+if (rightproduct == 0) {
+    rightproduct = 1;
+}
             
             
             leftproduct*= nums[i];
